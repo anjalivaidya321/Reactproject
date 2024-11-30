@@ -1,0 +1,154 @@
+.about_wrapper{
+    flex-direction: row !important;
+}
+.aboutimg{
+   width: 50%; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.aboutimg img{
+    height: 90%;
+    width: 90%;
+   
+}
+/* img{
+    margin-left: -10%;
+    width: 120%;
+} */
+.about_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding:50px 30px;
+    gap:15px;
+    color:#1e1e1e;
+    /* margin-left: -5%; */
+}
+.about_content p{
+    font-size: 18px;
+}
+.Cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.Cards p{
+height: 100px;
+width: 200px;
+display: flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+border: 1px solid #9d7e54;
+border-radius: 25px;
+ font-size: 35px;
+ line-height: 35px;
+text-align: center;
+font-weight: 600; 
+font-family:'poppins' ;
+background-color:rgba(157, 126,84,0) ;
+}
+.Cards p:nth-child(2){
+    margin-top: 20px;
+}
+.Cards p span{
+    font-size: 15px;
+    display: block;
+}
+/* Default (large desktops) */
+@media screen and (max-width: 1400px) {
+    .Cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_content {
+        padding: 0;
+    }
+    .about_img img {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+/* Medium desktops */
+@media screen and (max-width: 1200px) {
+    .about_wrapper {
+        flex-direction: column;
+    }
+    .about_img,
+    .about_content {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .Cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Tablets (landscape) */
+@media screen and (max-width: 992px) {
+    .about_img img {
+        height: 70%;
+        width: 90%;
+    }
+    .about_content {
+        padding: 20px;
+    }
+    .Cards p {
+        width: 150px;
+        height: 80px;
+        font-size: 30px;
+    }
+}
+
+/* Tablets (portrait) */
+@media screen and (max-width: 768px) {
+    .about_img img {
+        width: 150%;
+        margin-left: -15%;
+        height: 50%;
+    }
+    .about_content {
+      width:120%;
+      height: 50%;
+    }
+    .Cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+    .Cards p {
+        width: 100%;
+        font-size: 25px;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 576px) {
+    .about_wrapper {
+        flex-direction: column;
+    }
+    .about_content {
+        gap: 10px;
+    }
+    .Cards p {
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+    }
+    .Cards {
+        gap: 10px;
+    }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 360px) {
+    .about_content p {
+        font-size: 16px;
+    }
+    .Cards p {
+        font-size: 18px;
+    }
+}

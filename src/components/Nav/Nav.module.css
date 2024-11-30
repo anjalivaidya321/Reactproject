@@ -1,0 +1,117 @@
+.nav_wrapper{
+    height: 80px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+   position: fixed;
+   top:0;
+   z-index: 99;
+}
+.nav_wrapper ul li{
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.nav_wrapper ul li a{
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.nav_wrapper ul li::after{
+    position: absolute;
+    content: '';
+    top:10px;
+    left: -10px;
+    transform: translateX(-50%);
+    height: 5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .2s;
+}
+.nav_wrapper ul li:hover::after{
+    background-color: #df8033;
+}
+.nav_wrapper .logo a {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.nav_wrapper .logo a span{
+    color: #df8033;
+}
+.Nav_btns{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.nav_wrapper::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: linear-gradient(0,transparent,#000);
+    z-index: -1;
+}
+#bars{
+    border: none;
+    background-color: #cb5c00;
+height: 40px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+  /* border-radius: 50%; */
+  font-size: 15px;
+  background-color: #cb5c00;
+  box-shadow: 2px 2px 3px #ffffff94 ,inset 3px 3px 10px #ffffff39;
+  transition: 1s;
+  cursor: pointer;
+  display: none;
+}
+#bars:hover{
+    box-shadow: 0px 0px 0px #ffffff94 ,inset 3px 3px 10px #ffffff39;
+    transform: scale(0.9);
+}
+@media screen and (max-width:1200px){
+    #bars{
+        display: flex;
+    }
+    .nav_wrapper ul{
+        position: absolute;
+        top: 100%;
+        left:-100%;
+        width:100%;
+        background-color: rgba(255, 255, 255,0.2 );
+        backdrop-filter: blur(8px);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-bottom: 1px solid #fff;
+        transition: .6s;
+    }
+    .navbarScroll{
+        background-color:#1e1e1e ;
+    }
+    .nav_wrapper ul li{
+        display: block;
+        margin: 5px 0;
+        padding:25px 0;
+        padding-left: 15%;
+        background-color: 1px solid rgba(131, 131, 131,0.4 );
+    }
+      .nav_wrapper ul li::after{
+        left:10%;
+        top:35px
+      }
+    .nav_wrapper ul li:last-child{
+        border: none;
+    }
+    .nav_wrapper .showNav{
+        left: 0;
+    }
+}
