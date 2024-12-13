@@ -35,7 +35,7 @@ function Rooms() {
         },
         {
             id: 5,
-            type: "Presidential Suite",
+            type: "Executive Suite",
             price: "$500",
             features: ["Daily Cleaning", "Private Pool", "Housekeeping", "Butler Service"],
             frontClass: roomsCSS.card_front5,
@@ -62,7 +62,7 @@ function Rooms() {
                         <div className={roomsCSS.card}>
                             {/* Card Front */}
                             <div className={`${roomsCSS.card_front} ${room.frontClass}`}>
-                                <button>{room.type}</button>
+                                <button className={roomsCSS.luxury}>{room.type}</button>
                             </div>
                             {/* Card Back */}
                             <div className={roomsCSS.card_back}>

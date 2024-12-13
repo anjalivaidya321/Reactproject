@@ -76,11 +76,11 @@ background-color:rgba(157, 126,84,0) ;
     .about_wrapper {
         flex-direction: column;
     }
-    .about_img,
+    /* .about_img,
     .about_content {
-        width: 100%;
-        padding: 0 20px;
-    }
+        /* width: 100%; */
+        /* padding: 0 20px; */
+    } */
     .Cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -106,12 +106,12 @@ background-color:rgba(157, 126,84,0) ;
 /* Tablets (portrait) */
 @media screen and (max-width: 768px) {
     .about_img img {
-        width: 150%;
-        margin-left: -15%;
+        /* width: 150%; */
+        /* margin-left: -15%; */
         height: 50%;
     }
     .about_content {
-      width:120%;
+      /* width:120%; */
       height: 50%;
     }
     .Cards {
@@ -125,26 +125,70 @@ background-color:rgba(157, 126,84,0) ;
 }
 
 /* Small phones */
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .about_wrapper {
-        flex-direction: column;
+        flex-direction: column; /* Ensure stacking of main content */
+        align-items: center; /* Center-align the content */
     }
+
+    .about_img,
     .about_content {
-        gap: 10px;
+        width: 100%; /* Full width for small screens */
+        display: flex;
+        flex-direction: row; /* Stack content and cards */
+        align-items: center;
+        gap: 15px;
     }
-    .Cards p {
-        font-size: 20px;
-        width: 100%;
-        height: auto;
-        line-height: 30px;
+
+    .about_img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-right: 100px; */
     }
+
+    .about_img img {
+        width: 150px; /* Adjust image size */
+        height: 150px;
+        margin-right:180px
+    }
+
+    .about_content {
+        display: flex;
+        flex-direction: column; /* Ensure the content is in a column */
+        margin-left:-200px;
+        text-align: center; /* Center align text */
+    }
+
     .Cards {
-        gap: 10px;
+        display: flex;
+        justify-content: space-between; /* Keep cards in one row */
+        /* gap: 10px; */
+        /* margin-right: 50px; */
+        /* height: 20px; */
+    }
+
+    .Cards p {
+        flex: 1; /* Ensure all cards take equal width */
+        font-size: 10px; /* Adjust font size for very small screens */
+        /* width: 50px; */
+        height: 140px;
+     /* padding-left: 20px; */
+        /* margin-right: 50px; */
+    }
+
+
+    .Cards p:nth-child(2) {
+        margin-top: 0; /* Remove unnecessary margin for mobile */
     }
 }
-
 /* Extra small phones */
 @media screen and (max-width: 360px) {
+    .about_img img {
+        width: 100%;
+        /* margin-left: -15%; */
+        height: 50%;
+    }
     .about_content p {
         font-size: 16px;
     }
