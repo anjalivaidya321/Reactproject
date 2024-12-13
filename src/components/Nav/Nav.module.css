@@ -12,6 +12,7 @@
 .nav_wrapper ul li{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     column-gap: 10px;
     position: relative;
 }
