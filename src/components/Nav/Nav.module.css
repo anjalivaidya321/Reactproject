@@ -9,15 +9,15 @@
    top:0;
    z-index: 99;
 }
-.nav_wrapper ul{
+/* .nav_wrapper ul{
     display: flex;
     justify-content: center;
     column-gap: 10px;
 
-}
+} */
 .nav_wrapper ul li{
     display: inline-block;
-    /* margin:0 20px; */
+    margin:0 10px;
     position: relative;
 }
 .nav_wrapper ul li a{
