@@ -30,14 +30,7 @@ return(
             <p>- Cafe and Canteen</p>
             <p>- Room Services</p>
         </div>
-        <div className={ServicesCSS.Service_card}>
-            <i className="ri-restaurant-line"></i>
-            <h3>Special Features</h3>
-            <p>- Custom Rooms</p>
-            <p>- Cricket Room</p>
-            <p>- Gym</p>
-            <p>- Room Services</p>
-        </div>
+       
         
      </div>
 

@@ -42,16 +42,7 @@ function Service() {
                    <p>- Smart TVs with streaming services</p>
                    <p>- Personalized room settings for guests</p>
                  </div>
-                {/* Family-Friendly Services */}
-                <div className={ServicesCSS.Service_card}>
-  
-                    <i className="ri-home-heart-line"></i>
-                    <h3>Family-Friendly Services</h3>
-                    <p>- Babysitting Services</p>
-                    <p>- Kids' Play Area</p>
-                    <p>- Family Rooms</p>
-                    <p>- Children's Entertainment</p>
-                </div>
+                
             </div>
         </div>
         </>
