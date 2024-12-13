@@ -76,11 +76,10 @@ background-color:rgba(157, 126,84,0) ;
     .about_wrapper {
         flex-direction: column;
     }
-    /* .about_img,
-    .about_content {
+   
         /* width: 100%; */
         /* padding: 0 20px; */
-    } */
+    
     .Cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
