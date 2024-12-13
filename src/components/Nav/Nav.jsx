@@ -7,15 +7,6 @@ const menuHandler=()=>{
     menu.current.classList.toggle(navCSS.showNav);
 }
 
-// const navbar=useRef()
-// window.addEventListener('scroll',function(){
-//     if(window.scrollY>200){
-//         navbar.current.classList.add(navCSS.navbarScroll)
-//     }
-//     else{
-//         navbar.current.classList.remove(navCSS.navbarScroll)
-//     }
-// })
     return(
         <div className={navCSS.nav_wrapper} >
                  <div className={navCSS.logo}>
