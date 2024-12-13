@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import  navCSS from './../Nav/Nav.module.css'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Nav(){
-// const  menu=useRef();
-// const menuHandler=()=>{
-//     menu.current.classList.toggle(navCSS.showNav);
-// }
+const  menu=useRef();
+const menuHandler=()=>{
+    menu.current.classList.toggle(navCSS.showNav);
+}
 
 // const navbar=useRef()
 // window.addEventListener('scroll',function(){
@@ -21,18 +21,19 @@ function Nav(){
                  <div className={navCSS.logo}>
                     <a href="#"><span>ROYAL</span>X</a>
                  </div>
-                 <ul >
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Blogs</a></li>
+                 <ul ref={menu}>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/About Us">About Us</Link></li>
+                    <li><Link to="/Services">Services</Link></li>
+                    <li><Link to="/Rooms">Rooms</Link></li>
+                    <li><Link to="/Testimonials">Testimonials</Link></li>
+                    <li><Link to="/Amenities">Amenities</Link></li>
+                    <li><Link to="/contact">Contact US</Link></li>
                  </ul>
 
                  <div className={navCSS.Nav_btns}>
-                      <button>Book Now</button>
-                      <i className="ri-menu-4-line" id={navCSS.bars} ></i>
+                      <button><Link to="/Rooms/2">Book Now</Link></button>
+                      <i className="ri-menu-4-line" id={navCSS.bars} onClick={menuHandler}></i>
                  </div>
         </div>
     )

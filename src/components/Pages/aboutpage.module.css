@@ -1,0 +1,131 @@
+/* Wrapper for the "Our Story" Section */
+.story_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+/* Image Styling */
+.story_img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story_img img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Content Styling */
+.story_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    gap: 20px;
+    color: #333;
+}
+
+/* Section Heading (Smaller Text) */
+.section_Heading {
+    font-size: 16px;
+    color: #9d7e54; /* Gold color, matching your theme */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Section Title */
+.section_Title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-top: 10px;
+}
+
+.section_Title span {
+    color: #9d7e54; /* Golden accent */
+}
+
+/* Paragraph Text */
+.story_content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Milestones List - Removed Bullets */
+.story_content ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Highlighted Milestones as Boxes */
+.story_content ul li {
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    color: #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.story_content ul li:hover {
+    background-color: #e9e9e9;
+    transform: translateX(5px);
+    border-color: #9d7e54;
+}
+
+/* Milestone Label */
+.story_content ul li span {
+    font-weight: bold;
+    color: #9d7e54; /* Gold Accent */
+}
+
+/* Styling for Milestone Text */
+.milestone_text {
+    font-size: 16px;
+    color: #444;
+    padding-left: 20px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1200px) {
+    .story_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .story_img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .story_content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .story_content p {
+        font-size: 16px;
+    }
+
+    .story_content ul li {
+        font-size: 16px;
+    }
+}

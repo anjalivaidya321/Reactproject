@@ -2,6 +2,7 @@ import React from "react";
 import aboutCSS from './../About/About.module.css'
 import aboutImg from '../../assets/about-one.png'
 function About(){
+  
 return(
 <div className={`${aboutCSS.about_wrapper} section`}>
    <div className={aboutCSS.about_img}>
@@ -17,6 +18,7 @@ return(
             <p>150K+<span>Events</span></p>
           </div>
    </div>
+   
 </div>
 )
 }

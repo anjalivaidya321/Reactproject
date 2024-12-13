@@ -1,0 +1,108 @@
+.details_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2rem auto; */
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    padding: 2rem;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  .des{
+    text-align: center;
+  }
+  .room_image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .details_container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .details_container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .booking_form {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .booking_form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .booking_form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .booking_form label input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+  }
+  
+  .booking_form label input:focus {
+    border-color: #888;
+    outline: none;
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5);
+  }
+  
+  .submit_button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit_button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .details_container {
+      padding: 1rem;
+    }
+  
+    .details_container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .booking_form label input {
+      font-size: 0.9rem;
+    }
+  
+    .submit_button {
+      font-size: 0.9rem;
+    }
+  }
+  

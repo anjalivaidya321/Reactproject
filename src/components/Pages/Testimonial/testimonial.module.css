@@ -1,0 +1,80 @@
+.sliderWrapper {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #f7f7f7, #ffffff);
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.testimonial {
+  width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.prev,
+.next {
+  background: #ff6347;
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.prev:hover,
+.next:hover {
+  background: #e55342;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .prev,
+  .next {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
