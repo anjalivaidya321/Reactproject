@@ -9,9 +9,9 @@ return(
    <img src={aboutImg} alt="about-img" />
    </div>
    <div className={aboutCSS.about_content}>
-       <small className="section_Heading">The Royal Hotel</small>
+       <small className="section_Heading" style={{fontSize:"25px"}}>The Royal Hotel</small>
        <h2 className="section_Title">Where Elegance Meets <span>Excellance</span></h2>
-       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam, alias laborum esse eius omnis natus debitis veniam dolore accusamus unde excepturi dolores illo. Commodi tenetur at corrupti harum fuga.</p>
+       <p>At RoyalX, we take pride in offering the highest standards of luxury and service, ensuring every guest enjoys a royal experience from start to finish.Discover the charm, indulge in luxury, and experience the royal treatment you deserve at RoyalX.</p>
        <div className={aboutCSS.Cards}>
            <p>260+<span>Awards Wins</span></p>
            <p>250K+<span>Visitors Visits</span></p>

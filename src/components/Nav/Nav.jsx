@@ -23,7 +23,7 @@ const menuHandler=()=>{
                  </ul>
 
                  <div className={navCSS.Nav_btns}>
-                      <button><Link to="/Rooms/2">Book Now</Link></button>
+                      <button ><Link to="/Rooms/2" style={{color:"white"}}>Book Now</Link></button>
                       <i className="ri-menu-4-line" id={navCSS.bars} onClick={menuHandler}></i>
                  </div>
         </div>

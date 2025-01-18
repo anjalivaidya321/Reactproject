@@ -13,7 +13,7 @@ function Roompage() {
   const rooms = [
     {
       name: "Junior Suite",
-      price: "$120",
+      price: "9,600",
       description: "A cozy and spacious room, perfect for relaxation. Includes daily cleaning, home services, and more.",
       size: "25m²",
       bedType: "1 King Bed",
@@ -21,7 +21,7 @@ function Roompage() {
     },
     {
       name: "Twin Room",
-      price: "$130",
+      price: "10,400",
       description: "A modern twin room with excellent amenities for a comfortable stay.",
       size: "30m²",
       bedType: "2 Single Beds",
@@ -29,7 +29,7 @@ function Roompage() {
     },
     {
       name: "Deluxe Suite",
-      price: "$200",
+      price: "16,000",
       description: "A luxurious suite with breathtaking views and extra space.",
       size: "50m²",
       bedType: "1 King Bed + Sofa Bed",
@@ -37,7 +37,7 @@ function Roompage() {
     },
     {
         name: "Penthouse Suite",
-        price: "$500",
+        price: "40,000",
         description: " For those who desire nothing but the best, the Penthouse Suite is the pinnacle of luxury. Spanning the top floor, this suite offers 360-degree views, a private hot tub, and exclusive access to the rooftop lounge. ",
         size: "120m²",
         bedType: "2 King Beds",
@@ -45,7 +45,7 @@ function Roompage() {
       },
       {
         name: " Garden View Suite",
-        price: "$150",
+        price: "12,000",
         description: "Immerse yourself in the beauty of nature while enjoying modern amenities in this suite. Overlooking lush gardens, this room combines comfort with serenity.",
         size: "40m²",
         bedType: "2 Single Beds or 1 King Bed",
@@ -53,7 +53,7 @@ function Roompage() {
       },
       {
         name: "Ocean Breeze Room",
-        price: "$180",
+        price: "14,400",
         description: " Wake up to the sound of the waves and the fresh ocean air in this beautifully appointed room. Perfect for those who crave tranquility, the Ocean Breeze Room offers a calming escape with beach views, a minimalist design, and natural elements that blend perfectly with the surrounding environment.",
         size: "35m²",
         bedType: "1 Queen Bed",

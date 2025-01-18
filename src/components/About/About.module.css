@@ -126,61 +126,55 @@ background-color:rgba(157, 126,84,0) ;
 /* Small phones */
 @media (max-width: 576px) {
     .about_wrapper {
-        flex-direction: column; /* Ensure stacking of main content */
-        align-items: center; /* Center-align the content */
-    }
-
-    .about_img,
-    .about_content {
-        width: 100%; /* Full width for small screens */
         display: flex;
-        flex-direction: row; /* Stack content and cards */
-        align-items: center;
-        gap: 15px;
+        flex-direction: column !important; /* Stack image and content vertically */
+        align-items: center; /* Center-align the content */
+        text-align: center; /* Center the text inside */
     }
 
     .about_img {
+        width: 100%; /* Image takes full width */
         display: flex;
         justify-content: center;
-        align-items: center;
-        /* margin-right: 100px; */
     }
 
     .about_img img {
-        width: 150px; /* Adjust image size */
-        height: 150px;
-        margin-right:180px
+        width: 90%; /* Adjust image size for small screens */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .about_content {
+        width: 100%; /* Content takes full width */
+        padding: 20px; /* Add some spacing for better readability */
         display: flex;
-        flex-direction: column; /* Ensure the content is in a column */
-        margin-left:-200px;
-        text-align: center; /* Center align text */
+        flex-direction: column; /* Ensure content is stacked vertically */
+        gap: 15px; /* Space between paragraphs */
     }
 
     .Cards {
-        display: flex;
-        justify-content: space-between; /* Keep cards in one row */
-        /* gap: 10px; */
-        /* margin-right: 50px; */
-        /* height: 20px; */
+        display: grid; /* Use grid for better control */
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 15px; /* Add space between cards */
+        margin-top: 20px;
     }
 
     .Cards p {
-        flex: 1; /* Ensure all cards take equal width */
-        font-size: 10px; /* Adjust font size for very small screens */
-        /* width: 50px; */
-        height: 140px;
-     /* padding-left: 20px; */
-        /* margin-right: 50px; */
+        width: 100%; /* Ensure cards take full width */
+        font-size: 16px; /* Adjust font size */
+        padding: 10px; /* Add spacing inside cards */
     }
-
-
-    .Cards p:nth-child(2) {
-        margin-top: 0; /* Remove unnecessary margin for mobile */
+    .section_Title {
+        display: flex; /* Use flexbox to avoid wrapping */
+        flex-wrap: nowrap; /* Ensure no wrapping */
+    }
+    .section_Title span {
+        white-space: nowrap; /* Prevent wrapping inside the span */
+    }
+    .section_Heading{
+        font-weight: bold !important;
     }
 }
+
 /* Extra small phones */
 @media screen and (max-width: 360px) {
     .about_img img {
